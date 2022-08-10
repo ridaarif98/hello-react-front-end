@@ -4,19 +4,19 @@ import { getGreeting } from './redux/greetingReducer';
 
 const Greeting = () => {
   const dispatch = useDispatch();
-  const randomGreeting = useSelector((state)=> state.greeting);
+  const randomGreeting = useSelector((state) => state.greeting);
 
   const handleClick = () => {
     dispatch(getGreeting());
   };
-  
+
   return (
-        <div className="box">
+    <div className="box">
           <p className="text">
-            My greeting 
+            My greeting
             {randomGreeting.greeting.message}
           </p>
-          <button type='button' className="helloBtn" onClick={handleClick}>Get Greeting Randomnly</button>
+          <button type="button" className="helloBtn" onClick={handleClick}>Get Greeting Randomnly</button>
         </div>
   );
 };
