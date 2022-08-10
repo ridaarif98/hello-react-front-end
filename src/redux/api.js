@@ -1,5 +1,5 @@
 export default async function greetingsFromApi() {
-    const endpoint = 'http://[::1]:3000/api/greetings';
+    const endpoint = '/api/greetings';
     const response = await fetch(endpoint);
     if (response.status !== 200) {
       throw new Error('Can not fetch the greetings from given API');
