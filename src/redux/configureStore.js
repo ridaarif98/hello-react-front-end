@@ -1,13 +1,13 @@
-import { applyMiddleware, createStore, combineReducers } from "redux";
-import thunk from "redux-thunk";
+import { applyMiddleware, createStore, combineReducers } from 'redux';
+import thunk from 'redux-thunk';
 
-import greetingReducer from "./greetingReducer";
+import greetingReducer from './greetingReducer';
 
 const reducer = combineReducers({
-    greeting: greetingReducer
-})
+  greeting: greetingReducer,
+});
 
 const store = createStore(
-    reducer,applyMiddleware(thunk)
+  reducer,applyMiddleware(thunk),
 );
 export default store;
