@@ -12,12 +12,12 @@ const Greeting = () => {
 
   return (
     <div className="box">
-          <p className="text">
-            My greeting
-            {randomGreeting.greeting.message}
-          </p>
-          <button type="button" className="helloBtn" onClick={handleClick}>Get Greeting Randomnly</button>
-        </div>
+      <p className="text">
+          My greeting
+          {randomGreeting.greeting.message}
+      </p>
+      <button type="button" className="helloBtn" onClick={handleClick}>Get Greeting Randomnly</button>
+    </div>
   );
 };
 
